@@ -56,7 +56,7 @@
       },
       "_artifactsLocation": {
         "type": "string",
-        "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-vmss-bottle-autoscale/",
+        "defaultValue": "https://github.com/bonikj/ARM/blob/main/",
         "metadata": {
           "description": "The base URI where artifacts required by this template are located"
         }
@@ -268,7 +268,7 @@
                     "autoUpgradeMinorVersion": true,
                     "settings": {
                       "fileUris": [
-                        "[uri(parameters('_artifactsLocation'), concat('installserver.sh', parameters('_artifactsLocationSasToken')))]"
+                        "[uri(parameters('_artifactsLocation'), concat('installserver.sh'))]"
                       ],
                       "commandToExecute": "bash installserver.sh"
                     }
